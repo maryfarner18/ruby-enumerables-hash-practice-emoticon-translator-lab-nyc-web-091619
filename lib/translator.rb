@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon(file, emoti)
   hash = load_library(file)
-  (hash["get_emoticon"][emoti]? hash["get_emoticon"][emoti] : "Sorry, that emoticon isn't recognized!")
+  (hash["get_emoticon"][emoti]? hash["get_emoticon"][emoti] : "Sorry, that emoticon was not found")
 end
 
 def get_english_meaning(emoti)
