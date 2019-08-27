@@ -2,7 +2,8 @@
 require "yaml"
 
 def load_library(file)
-  hash = YAML.load_file(file)
+  hash = { "get_meaning" => {}, "get_emoticon" => {}}
+  YAML.load_file(file)
   puts hash
   hash
 end
