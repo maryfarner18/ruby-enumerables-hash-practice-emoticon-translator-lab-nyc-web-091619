@@ -6,10 +6,11 @@ def load_library(file)
   
   hash = { "get_meaning" => {}, "get_emoticon" => {}}
   
-  temp.
-  hash["get_meaning"] = 
-  hash["get_emoticon"] = YAML.load_file(file)
-  puts hash
+  temp.each_key do |key|
+    hash["get_meaning"][temp[key][1]] = key
+    hash["get_emoticon"][key] = temp[key][0]
+  end
+
   hash
 end
 
