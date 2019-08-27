@@ -8,7 +8,7 @@ def load_library(file)
   
   temp.each_key do |key|
     hash["get_meaning"][temp[key][1]] = key
-    hash["get_emoticon"][key] = temp[key][0]
+    hash["get_emoticon"][temp[key][0]] = key
   end
 
   hash
